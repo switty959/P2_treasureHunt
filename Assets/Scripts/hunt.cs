@@ -34,25 +34,39 @@ using UnityEngine.UI;
         {
         return this.name;
         }
+
         public void getHuntName(GameObject textHolder)
         {
-            textHolder.GetComponent<Text>().text = this.name;
+            textHolder.GetComponentInChildren<Text>().text = this.name;
         }
+
         public void getHuntScore(GameObject textHolder)
         {
-            textHolder.GetComponent<Text>().text = this.score.ToString();
+            textHolder.GetComponentInChildren<Text>().text = this.score.ToString();
         }
+
         public void getHuntTime(GameObject textHolder)
         {
-            textHolder.GetComponent<Text>().text = this.time.ToString();
+            textHolder.GetComponentInChildren<Text>().text = this.time.ToString();
         }
+
         public void getHuntDistance(GameObject textHolder)
         {
-            textHolder.GetComponent<Text>().text = this.distance.ToString();
+            textHolder.GetComponentInChildren<Text>().text = this.distance.ToString();
         }
-        public void setHuntName(string newName)
+
+    public int getHuntId()
+    {
+        return this.id;
+    }
+
+    public void setHuntName(string newName)
         {
             this.name = newName;
         }
+    public void setHuntId(int newId)
+    {
+        this.id = newId;
+    }
 }
     
