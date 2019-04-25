@@ -1,9 +1,31 @@
-
-.vs/P2_treasureHunt/v15/.suo
-*.db
-.vs/P2_treasureHunt/v15/.suo
-.dwlt
-Library/metadata/dd/dd0c1821c4450614890aeb1578441e5b
-*.info
-Library/metadata/ee/ee534aa03c9c34846a808f6b0b4a54d0
+# =============== #
+# Unity generated #
+# =============== #
+Temp/
 Library/
+
+# ===================================== #
+# Visual Studio / MonoDevelop generated #
+# ===================================== #
+ExportedObj/
+obj/
+*.svd
+*.userprefs
+/*.csproj
+*.pidb
+*.suo
+/*.sln
+*.user
+*.unityproj
+*.booproj
+
+# ============ #
+# OS generated #
+# ============ #
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
