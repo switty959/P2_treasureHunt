@@ -62,7 +62,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\Back.cs" />
+    <Compile Include="Assets\Scripts\ButtonFlip.cs" />
     <Compile Include="Assets\Scripts\clues.cs" />
     <Compile Include="Assets\Scripts\hunt.cs" />
     <Compile Include="Assets\Scripts\Info_Menu.cs" />
@@ -72,25 +72,25 @@
     <Compile Include="Assets\Scripts\testHunt.cs" />
     <None Include="Assets\Materials\GrabPass.shader" />
     <Reference Include="Unity.Timeline.Editor">
-      <HintPath>D:/unityProjects/P2_treasureHunt/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+      <HintPath>C:/Users/scott/OneDrive - Aalborg Universitet/Semester 2/Hunts/Prototype_High_Fidelity/GitHub/P2_treasureHunt/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>D:/unityProjects/P2_treasureHunt/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>C:/Users/scott/OneDrive - Aalborg Universitet/Semester 2/Hunts/Prototype_High_Fidelity/GitHub/P2_treasureHunt/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PackageManagerUI.Editor">
-      <HintPath>D:/unityProjects/P2_treasureHunt/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+      <HintPath>C:/Users/scott/OneDrive - Aalborg Universitet/Semester 2/Hunts/Prototype_High_Fidelity/GitHub/P2_treasureHunt/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
-      <HintPath>D:/unityProjects/P2_treasureHunt/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+      <HintPath>C:/Users/scott/OneDrive - Aalborg Universitet/Semester 2/Hunts/Prototype_High_Fidelity/GitHub/P2_treasureHunt/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>D:/unityProjects/P2_treasureHunt/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+      <HintPath>C:/Users/scott/OneDrive - Aalborg Universitet/Semester 2/Hunts/Prototype_High_Fidelity/GitHub/P2_treasureHunt/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>D:/unityProjects/P2_treasureHunt/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>C:/Users/scott/OneDrive - Aalborg Universitet/Semester 2/Hunts/Prototype_High_Fidelity/GitHub/P2_treasureHunt/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.DataPrivacy">
-      <HintPath>D:/unityProjects/P2_treasureHunt/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
+      <HintPath>C:/Users/scott/OneDrive - Aalborg Universitet/Semester 2/Hunts/Prototype_High_Fidelity/GitHub/P2_treasureHunt/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.1.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -273,13 +273,13 @@
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.1.0f2/Editor/Data/PlaybackEngines/VuforiaSupport/Managed/Runtime/Vuforia.UnityExtensions.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Editor">
-      <HintPath>D:/unityProjects/P2_treasureHunt/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.Editor.dll</HintPath>
+      <HintPath>C:/Users/scott/OneDrive - Aalborg Universitet/Semester 2/Hunts/Prototype_High_Fidelity/GitHub/P2_treasureHunt/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.StandardEvents">
-      <HintPath>D:/unityProjects/P2_treasureHunt/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.StandardEvents.dll</HintPath>
+      <HintPath>C:/Users/scott/OneDrive - Aalborg Universitet/Semester 2/Hunts/Prototype_High_Fidelity/GitHub/P2_treasureHunt/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Tracker">
-      <HintPath>D:/unityProjects/P2_treasureHunt/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.Tracker.dll</HintPath>
+      <HintPath>C:/Users/scott/OneDrive - Aalborg Universitet/Semester 2/Hunts/Prototype_High_Fidelity/GitHub/P2_treasureHunt/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.Tracker.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.1.0f2/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
@@ -629,7 +629,7 @@
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
-  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
   </Target>
