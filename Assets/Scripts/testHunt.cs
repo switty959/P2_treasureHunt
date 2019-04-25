@@ -8,8 +8,11 @@ public class testHunt : MonoBehaviour
     public GameObject canvasHolder;
     public GameObject placeHolder;
     public GameObject nameholders;
-    
+    public GameObject cluePage;
+
+
     public string canvasName = "Canvas";
+    string cluePageName = "clue page";
     public string[] huntNames = {"yes i did sir","have you seen my bear, tibbers","biggus dickus"," i go by many name, but you can call me tim","Lighting bolt!" };
     public int numbersOfHunts = 5;
     int margin = 50;
@@ -19,13 +22,15 @@ public class testHunt : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+
         canvasHolder = GameObject.Find(canvasName);
+        
         
         hunters = new hunt[numbersOfHunts];
         generateHunts();
     }
-
-   public void generateHunts()
+   
+    public void generateHunts()
     {
         for (int i = 0; i < numbersOfHunts; i++)
         {
@@ -46,7 +51,9 @@ public class testHunt : MonoBehaviour
 
     public void goToCluePage(int id)
     {
-
+        canvasHolder.SetActive(false);
+        cluePage.SetActive(true);
+        cluePage.GetComponent<testClues>().fk_hunt_id = id;
         Debug.Log(id.ToString());
     }
 }

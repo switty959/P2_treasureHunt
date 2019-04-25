@@ -13,7 +13,7 @@ public class Back : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        int count = gameObject.transform.GetChildCount()-1;
+        int count = gameObject.transform.childCount-1;
         Panels = new GameObject[count];
         for (int i = 0; i < count; i++)
         {
