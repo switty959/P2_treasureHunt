@@ -63,14 +63,19 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\ButtonFlip.cs" />
+    <Compile Include="Assets\Scripts\clueAnimation.cs" />
     <Compile Include="Assets\Scripts\clues.cs" />
     <Compile Include="Assets\Scripts\hunt.cs" />
     <Compile Include="Assets\Scripts\Info_Menu.cs" />
+    <Compile Include="Assets\Scripts\InfoMenu.cs" />
     <Compile Include="Assets\Scripts\Navigation.cs" />
     <Compile Include="Assets\Scripts\PanelControls.cs" />
+    <Compile Include="Assets\Scripts\Profile.cs" />
+    <Compile Include="Assets\Scripts\profileTest.cs" />
     <Compile Include="Assets\Scripts\testClues.cs" />
     <Compile Include="Assets\Scripts\testHunt.cs" />
     <None Include="Assets\Materials\GrabPass.shader" />
+    <None Include="Assets\Confetti FX\Readme.txt" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>C:/Users/scott/OneDrive - Aalborg Universitet/Semester 2/Hunts/Prototype_High_Fidelity/GitHub/P2_treasureHunt/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>

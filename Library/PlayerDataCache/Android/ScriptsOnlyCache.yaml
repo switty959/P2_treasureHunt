@@ -5,15 +5,6 @@ ScriptsOnlyBuild:
     - Info_Menu
     - Navigation
     - PanelControls
-    UnityEditor.Graphs.dll:
-    - UnityEditor.Graphs.AnimationBlendTree.Graph
-    - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
-    - UnityEditor.Graphs.AnimationStateMachine.Graph
-    - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.StateMachineInspector
-    - UnityEditor.Graphs.AnimationStateMachine.StateNode
-    - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.TestListCacheData
     UnityEngine.UI.dll:
@@ -82,9 +73,9 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 9448}
     - Class: 114
-      Script: {instanceID: 10164}
+      Script: {instanceID: 10166}
     - Class: 114
-      Script: {instanceID: 10308}
+      Script: {instanceID: 10310}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1152,6 +1143,12 @@ ScriptsOnlyBuild:
     className: TMP_ColorGradient
   - hash:
       serializedVersion: 2
+      Hash: 723359f8a138639eb71c1c9456f52f7d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: testClues
+  - hash:
+      serializedVersion: 2
       Hash: 8649814970b42d345b89944b862453cc
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
@@ -1362,7 +1359,7 @@ ScriptsOnlyBuild:
     className: WireframeTrackableEventHandler
   - hash:
       serializedVersion: 2
-      Hash: 035a3b33417a335f646894e2223fde61
+      Hash: b7be6edae53c7767f836cb810916148f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: testHunt

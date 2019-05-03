@@ -11,7 +11,7 @@ public class profileTest : MonoBehaviour
     void Start()
     {
 
-        Profile profile = new Profile("bob bobsen");
+        Profile profile = new Profile("Bob Bobsen");
 
 
         profileName.GetComponent<Text>().text = profile.getName();
@@ -22,9 +22,5 @@ public class profileTest : MonoBehaviour
 
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+ 
 }

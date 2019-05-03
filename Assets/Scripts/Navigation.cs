@@ -9,7 +9,7 @@ public class Navigation : MonoBehaviour
     public GameObject BackButton;
     public GameObject[] Panels;
     public GameObject Info_Menu;
-   
+    public GameObject HomeBar;
 
 
 
@@ -29,11 +29,14 @@ public class Navigation : MonoBehaviour
         if (Panels[1].activeInHierarchy)
         {
             BackButton.SetActive(false);
+            HomeBar.SetActive(false);
+
         } // If on homepage set back button to inactive
 
         else
         {
             BackButton.SetActive(true);
+            HomeBar.SetActive(true);
         }
          // If anywhere else but homepage set back button to active
 
