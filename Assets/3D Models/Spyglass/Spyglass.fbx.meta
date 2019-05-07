@@ -11,7 +11,7 @@ ModelImporter:
     second: Spyglass_Opening
   - first:
       74: 4423874081691989760
-    second: Scene_Open
+    second: Spyglass_Open
   externalObjects:
   - first:
       type: UnityEngine:Material
@@ -124,7 +124,7 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: Scene_Open
+      name: Spyglass_Open
       takeName: Scene
       internalID: 4423874081691989760
       firstFrame: 107
