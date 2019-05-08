@@ -50,9 +50,8 @@ public class testHunt : MonoBehaviour
 
     public void goToCluePage(int id)
     {
-        canvasHolder.SetActive(false);
+        this.gameObject.SetActive(false);
         cluePage.SetActive(true);
         cluePage.GetComponent<testClues>().fk_hunt_id = id;
-        Debug.Log(id.ToString());
     }
 }

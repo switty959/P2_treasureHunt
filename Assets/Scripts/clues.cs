@@ -10,8 +10,9 @@ public class clues
     string riddles;
     int id;
     int fk_huntId;
-    double latX;
-    double longY;
+    /*double latX;
+    double longY;*/
+    Vector2 coordinates;
     bool clueFound;
     GameObject objectToShow;
 
@@ -21,18 +22,20 @@ public class clues
         riddles = "this is a riddle";
         id = 0;
         fk_huntId = 0;
-        latX = 0.0;
-        longY = 0.0;
+        /* latX = 0.0;
+         longY = 0.0;*/
+        coordinates = new Vector2(0,0);
         clueFound = false;
     }
-    public clues (string tempName, string tempRiddle, int tempId, int tempHuntId, double tempLatX, double tempLongY,GameObject tempObject)
+    public clues (string tempName, string tempRiddle, int tempId, int tempHuntId, float tempLatX, float tempLongY,GameObject tempObject)
     {
         name = tempName;
         riddles = tempRiddle;
         id = tempId;
         fk_huntId = tempHuntId;
-        latX = tempLatX;
-        longY = tempLongY;
+        /*latX = tempLatX;
+        longY = tempLongY;*/
+        coordinates = new Vector2(tempLatX, tempLongY);
         clueFound = false;
         objectToShow = tempObject;
     }
@@ -53,6 +56,12 @@ public class clues
     {
         return this.fk_huntId;
     }
+
+    public Vector2 getClueCoordinates()
+    {
+        return this.coordinates;
+    }
+    /*
     public double getClueLatX()
     {
         return this.latX;
@@ -60,7 +69,7 @@ public class clues
     public double getClueLongY()
     {
         return this.longY;
-    }
+    }*/
     public bool getClueFound()
     {
         return this.clueFound;
@@ -88,6 +97,16 @@ public class clues
     {
         this.fk_huntId = newHuntId;
     }
+    public void setClueCoordinates(float newLatX, float newLongY)
+    {
+        this.coordinates = new Vector2(newLatX,newLongY);
+    }
+    public void setClueCoordinates(Vector2 newCoordinates)
+    {
+        this.coordinates = newCoordinates;
+    }
+
+    /*
     public void setClueLatX(double newLatX)
     {
         this.latX = newLatX;
@@ -95,7 +114,7 @@ public class clues
     public void setClueLongY(double newLongY)
     {
         this.longY = newLongY;
-    }
+    }*/
 
     public void setClueFound(bool newBool)
     {
@@ -124,13 +143,8 @@ public class clues
     {
         textholder.GetComponentInChildren<Text>().text = this.fk_huntId.ToString();
     }
-    public void getClueLatX(GameObject textholder)
-    {
-        textholder.GetComponentInChildren<Text>().text = this.latX.ToString();
-    }
-    public void getClueLongY(GameObject textholder)
-    {
-        textholder.GetComponentInChildren<Text>().text = this.longY.ToString();
-    }
+    
     //custom get method ending
+
+   
 }

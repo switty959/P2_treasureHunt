@@ -9,14 +9,20 @@ public class testClues : MonoBehaviour
     public GameObject placeHolder;
     public GameObject nameholders;
     public GameObject ARPage;
+    public GameObject arpageRiddle;
+
     public GameObject[] buttons;
     public GameObject[] rewards; // place 3D models in here
+    public Vector2[] cluesCoordinates;
+    public string[] cluesRiddle = { "who shot the sherrif?", "Who carry a teddy bear in online game called 'League of Legeonds'?", "Which movie is this reference from", "in the 'monty python and the holy grail', what is Tim's job?", "this spell is what?" };
     Transform imageHolder;
     public ARTapToPlaceObject setObject;
+    public updateGPSText setTargetcoordinates;
+    
 
     public string currentPageName = "Canvas";
     public string cluesNames ="clue";
-    public string[] cluesRiddle = { "who shot the sherrif?", "Who carry a teddy bear in online game called 'League of Legeonds'?", "Which movie is this reference from", "in the 'monty python and the holy grail', what is Tim's job?", "this spell is what?" };
+   
     public int numbersOfClues = 5;
     int margin = 50;
     public int fk_hunt_id;
@@ -44,7 +50,6 @@ public class testClues : MonoBehaviour
 
         for (int i = 0; i < numbersOfClues; i++)
         {
-            Debug.Log(fk_hunt_id);
             listOfClues[i] = new clues();
             int n = i + 1;
             string newClueName = cluesNames + n.ToString();
@@ -53,7 +58,8 @@ public class testClues : MonoBehaviour
             listOfClues[i].setClueHuntId(0);
             listOfClues[i].setClueRiddle(cluesRiddle[i]);
             listOfClues[i].setObjectToShow(rewards[i]);
-            
+            listOfClues[i].setClueCoordinates(cluesCoordinates[i]);
+
         }
         for (int i = 0; i < numbersOfClues; i++)
         {
@@ -78,8 +84,6 @@ public class testClues : MonoBehaviour
     }
     public void test(int id)
     {
-
-        Debug.Log(listOfClues[id].getClueRiddle());
         listOfClues[id + 1].setClueFound(true);
     }
 
@@ -89,8 +93,10 @@ public class testClues : MonoBehaviour
         ARPage.SetActive(true);
         ARPage.GetComponent<ARpageTest>().id = id;
         ARPage.GetComponent<ARpageTest>().maxNumberOfClues = listOfClues.Length-1;
-        Debug.Log(ARPage.GetComponent<ARpageTest>().maxNumberOfClues);
+        
         this.gameObject.SetActive(false);
+        setTargetcoordinates.GetComponent<updateGPSText>().target = listOfClues[id].getClueCoordinates();
+        arpageRiddle.GetComponent<Text>().text = listOfClues[id].getClueRiddle();
     }
 
     public void checkClueBool()

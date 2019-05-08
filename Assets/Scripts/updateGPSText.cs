@@ -5,9 +5,10 @@ using UnityEngine.UI;
 
 public class updateGPSText : MonoBehaviour
 {
-    public Vector3 target;
+    public Vector2 target;
     public float howFar;
     public int checkpoint;
+    public GameObject arpageShowRiddle;
 
     private void Start()
     {
@@ -22,7 +23,11 @@ public class updateGPSText : MonoBehaviour
         
         if (Vector2.Distance(newPos, target) <= howFar)
         {
-            
+            arpageShowRiddle.SetActive(false);
+        }
+        else
+        {
+            arpageShowRiddle.SetActive(true);
         }
         
     }
