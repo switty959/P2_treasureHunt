@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+
 public class clues
 {
     string name;
@@ -12,6 +13,7 @@ public class clues
     double latX;
     double longY;
     bool clueFound;
+    GameObject objectToShow;
 
     public clues()
     {
@@ -23,7 +25,7 @@ public class clues
         longY = 0.0;
         clueFound = false;
     }
-    public clues (string tempName, string tempRiddle, int tempId, int tempHuntId, double tempLatX, double tempLongY)
+    public clues (string tempName, string tempRiddle, int tempId, int tempHuntId, double tempLatX, double tempLongY,GameObject tempObject)
     {
         name = tempName;
         riddles = tempRiddle;
@@ -32,6 +34,7 @@ public class clues
         latX = tempLatX;
         longY = tempLongY;
         clueFound = false;
+        objectToShow = tempObject;
     }
     //standard get method start
     public string getClueName()
@@ -61,6 +64,10 @@ public class clues
     public bool getClueFound()
     {
         return this.clueFound;
+    }
+    public GameObject getObjectToShow()
+    {
+        return this.objectToShow;
     }
     // standard get methods ends
 
@@ -93,6 +100,10 @@ public class clues
     public void setClueFound(bool newBool)
     {
         this.clueFound = newBool;
+    }
+    public void setObjectToShow(GameObject newObject)
+    {
+        this.objectToShow = newObject;
     }
     // standard set method ending
 

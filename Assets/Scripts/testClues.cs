@@ -8,8 +8,11 @@ public class testClues : MonoBehaviour
     public GameObject currentPage;
     public GameObject placeHolder;
     public GameObject nameholders;
+    public GameObject ARPage;
     public GameObject[] buttons;
+    public GameObject[] rewards; // place 3D models in here
     Transform imageHolder;
+    public ARTapToPlaceObject setObject;
 
     public string currentPageName = "Canvas";
     public string cluesNames ="clue";
@@ -18,14 +21,15 @@ public class testClues : MonoBehaviour
     int margin = 50;
     public int fk_hunt_id;
     public int cluesFoundSoFar = 0;
-
     public clues[] listOfClues;
+
     // Start is called before the first frame update
     void Start()
     { 
         currentPage = GameObject.Find(currentPageName);
         listOfClues = new clues[numbersOfClues];
         buttons = new GameObject[numbersOfClues];
+
         generateClues();
         
     }
@@ -46,8 +50,9 @@ public class testClues : MonoBehaviour
             string newClueName = cluesNames + n.ToString();
             listOfClues[i].setClueName(newClueName);
             listOfClues[i].setClueId(i);
-            listOfClues[i].setClueHuntId(1);
+            listOfClues[i].setClueHuntId(0);
             listOfClues[i].setClueRiddle(cluesRiddle[i]);
+            listOfClues[i].setObjectToShow(rewards[i]);
             
         }
         for (int i = 0; i < numbersOfClues; i++)
@@ -61,7 +66,7 @@ public class testClues : MonoBehaviour
                 newPlaceHolder.transform.position = newPosition;
                 nameholders = newPlaceHolder.transform.GetChild(0).gameObject;
                 listOfClues[i].getClueName(nameholders);
-                nameholders.GetComponent<Button>().onClick.AddListener(delegate { test(clueId); });
+                nameholders.GetComponent<Button>().onClick.AddListener(delegate { headToARPage(clueId); });
                 buttons[i] = newPlaceHolder;
                 imageHolder = newPlaceHolder.transform.GetChild(1);
             }
@@ -73,9 +78,21 @@ public class testClues : MonoBehaviour
     }
     public void test(int id)
     {
+
         Debug.Log(listOfClues[id].getClueRiddle());
         listOfClues[id + 1].setClueFound(true);
     }
+
+    public void headToARPage(int id)
+    {
+        setObject.objectsToSpawn = listOfClues[id].getObjectToShow();
+        ARPage.SetActive(true);
+        ARPage.GetComponent<ARpageTest>().id = id;
+        ARPage.GetComponent<ARpageTest>().maxNumberOfClues = listOfClues.Length-1;
+        Debug.Log(ARPage.GetComponent<ARpageTest>().maxNumberOfClues);
+        this.gameObject.SetActive(false);
+    }
+
     public void checkClueBool()
     {
         listOfClues[0].setClueFound(true);

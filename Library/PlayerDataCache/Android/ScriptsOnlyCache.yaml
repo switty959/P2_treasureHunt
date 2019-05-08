@@ -1,12 +1,26 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
-    - ButtonFlip
-    - Info_Menu
-    - Navigation
-    - PanelControls
+    - ARTapToPlaceObject
+    - ARpageTest
+    - TestLocationService
+    - testClues
+    - testHunt
+    - updateGPSText
+    Unity.XR.ARFoundation.dll:
+    - UnityEngine.XR.ARFoundation.ARCameraBackground
+    - UnityEngine.XR.ARFoundation.ARPlaneManager
+    - UnityEngine.XR.ARFoundation.ARSession
+    - UnityEngine.XR.ARFoundation.ARSessionOrigin
+    UnityEditor.Graphs.dll:
+    - UnityEditor.Graphs.AnimationBlendTree.Graph
+    - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.Graph
+    - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.TestListCacheData
+    UnityEngine.SpatialTracking.dll:
+    - UnityEngine.SpatialTracking.TrackedPoseDriver
     UnityEngine.UI.dll:
     - UnityEngine.EventSystems.EventSystem
     - UnityEngine.EventSystems.StandaloneInputModule
@@ -14,12 +28,9 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.CanvasScaler
     - UnityEngine.UI.GraphicRaycaster
     - UnityEngine.UI.Image
-    - UnityEngine.UI.Mask
-    - UnityEngine.UI.ScrollRect
-    - UnityEngine.UI.Scrollbar
     - UnityEngine.UI.Text
   sceneClasses:
-    Assets/Scenes/Scott's brewery/p2 application.unity:
+    Assets/Scenes/Marc's Daycare/ARpageTesting.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -28,54 +39,58 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 21
       Script: {instanceID: 0}
+    - Class: 23
+      Script: {instanceID: 0}
     - Class: 28
+      Script: {instanceID: 0}
+    - Class: 33
+      Script: {instanceID: 0}
+    - Class: 43
       Script: {instanceID: 0}
     - Class: 48
       Script: {instanceID: 0}
-    - Class: 74
+    - Class: 64
       Script: {instanceID: 0}
-    - Class: 81
-      Script: {instanceID: 0}
-    - Class: 82
-      Script: {instanceID: 0}
-    - Class: 83
-      Script: {instanceID: 0}
-    - Class: 91
-      Script: {instanceID: 0}
-    - Class: 95
+    - Class: 65
       Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
-    - Class: 111
-      Script: {instanceID: 0}
-    - Class: 114
-      Script: {instanceID: 9270}
-    - Class: 114
-      Script: {instanceID: 9282}
-    - Class: 114
-      Script: {instanceID: 9388}
-    - Class: 114
-      Script: {instanceID: 9390}
-    - Class: 114
-      Script: {instanceID: 9396}
-    - Class: 114
-      Script: {instanceID: 9402}
-    - Class: 114
-      Script: {instanceID: 9410}
     - Class: 114
       Script: {instanceID: 9418}
     - Class: 114
-      Script: {instanceID: 9436}
+      Script: {instanceID: 9420}
     - Class: 114
-      Script: {instanceID: 9438}
+      Script: {instanceID: 9426}
     - Class: 114
-      Script: {instanceID: 9446}
+      Script: {instanceID: 9432}
     - Class: 114
-      Script: {instanceID: 9448}
+      Script: {instanceID: 9440}
     - Class: 114
-      Script: {instanceID: 10166}
+      Script: {instanceID: 9476}
     - Class: 114
-      Script: {instanceID: 10310}
+      Script: {instanceID: 9478}
+    - Class: 114
+      Script: {instanceID: 10858}
+    - Class: 114
+      Script: {instanceID: 10980}
+    - Class: 114
+      Script: {instanceID: 17336}
+    - Class: 114
+      Script: {instanceID: 17350}
+    - Class: 114
+      Script: {instanceID: 17404}
+    - Class: 114
+      Script: {instanceID: 17430}
+    - Class: 114
+      Script: {instanceID: 17446}
+    - Class: 114
+      Script: {instanceID: 18910}
+    - Class: 114
+      Script: {instanceID: 19484}
+    - Class: 114
+      Script: {instanceID: 19486}
+    - Class: 114
+      Script: {instanceID: 19488}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -535,6 +550,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: SignalAsset
+  - hash:
+      serializedVersion: 2
+      Hash: fda6c38961026a187f01fa78ee2579c4
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: InfoMenu
   - hash:
       serializedVersion: 2
       Hash: f08a111e17bb701f9c9ec57bb78d9920
@@ -1011,7 +1032,7 @@ ScriptsOnlyBuild:
     className: AnalyticsEventTrackerEditor
   - hash:
       serializedVersion: 2
-      Hash: 1c0fccd0ce482d0a7c2b566f1d43d299
+      Hash: 5fab4f110e232cc4f47dda515cb4a207
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Navigation
@@ -1101,6 +1122,12 @@ ScriptsOnlyBuild:
     className: TimelineAsset
   - hash:
       serializedVersion: 2
+      Hash: 452cc9e83c606f1121c1245205fdd392
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: clueAnimation
+  - hash:
+      serializedVersion: 2
       Hash: ee0cef6caaac8ae485bfa82f000f0f7b
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
@@ -1117,6 +1144,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: AudioTrack
+  - hash:
+      serializedVersion: 2
+      Hash: 329f8e08cec17374c1e5e10b04e98073
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: profileTest
   - hash:
       serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
@@ -1143,7 +1176,7 @@ ScriptsOnlyBuild:
     className: TMP_ColorGradient
   - hash:
       serializedVersion: 2
-      Hash: 723359f8a138639eb71c1c9456f52f7d
+      Hash: 6a21839ec32d726bf6801ad41ef5e1ae
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: testClues
@@ -1579,7 +1612,139 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
+  - hash:
+      serializedVersion: 2
+      Hash: 612f5ba7f785e1dd6f65cd0a34182bcb
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: scrollAnimation
+  - hash:
+      serializedVersion: 2
+      Hash: f341d937bf3ae3ad5e1bf84884a910ab
+    assemblyName: Unity.XR.ARFoundation.dll
+    namespaceName: UnityEngine.XR.ARFoundation
+    className: ARPlaneManager
+  - hash:
+      serializedVersion: 2
+      Hash: 795c44aa755e1140c8cc008d1813d4d8
+    assemblyName: Unity.XR.ARFoundation.dll
+    namespaceName: UnityEngine.XR.ARFoundation
+    className: ARCameraOptions
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Unity.XR.ARFoundation.dll
+    namespaceName: UnityEngine.XR.ARFoundation
+    className: ARReferencePoint
+  - hash:
+      serializedVersion: 2
+      Hash: d251bf88db6c95a6b1aa0b69298da9ef
+    assemblyName: UnityEngine.SpatialTracking.dll
+    namespaceName: UnityEngine.SpatialTracking
+    className: TrackedPoseDriver
+  - hash:
+      serializedVersion: 2
+      Hash: e8733e39efa851172df1c9eaef062265
+    assemblyName: Unity.XR.ARFoundation.dll
+    namespaceName: UnityEngine.XR.ARFoundation
+    className: ARPlane
+  - hash:
+      serializedVersion: 2
+      Hash: 290afc8da8e459e0b8dc7444bfaf5e35
+    assemblyName: Unity.XR.ARFoundation.dll
+    namespaceName: UnityEngine.XR.ARFoundation
+    className: ARFace
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Unity.XR.ARFoundation.dll
+    namespaceName: UnityEngine.XR.ARFoundation
+    className: ARPlaneMeshVisualizer
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Unity.XR.ARFoundation.dll
+    namespaceName: UnityEngine.XR.ARFoundation
+    className: ARPointCloud
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Unity.XR.ARFoundation.dll
+    namespaceName: UnityEngine.XR.ARFoundation
+    className: ARFaceMeshVisualizer
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Unity.XR.ARFoundation.dll
+    namespaceName: UnityEngine.XR.ARFoundation
+    className: ARPointCloudParticleVisualizer
+  - hash:
+      serializedVersion: 2
+      Hash: d8967d9f3786748a827ab827c3a3f814
+    assemblyName: Unity.XR.ARFoundation.dll
+    namespaceName: UnityEngine.XR.ARFoundation
+    className: ARSession
+  - hash:
+      serializedVersion: 2
+      Hash: fcc7ae5ff1b0c9cad5865d5b6cee016a
+    assemblyName: Unity.XR.ARFoundation.dll
+    namespaceName: UnityEngine.XR.ARFoundation
+    className: ARReferencePointManager
+  - hash:
+      serializedVersion: 2
+      Hash: d0976f085ee327327a35839ca3cb80f1
+    assemblyName: Unity.XR.ARFoundation.dll
+    namespaceName: UnityEngine.XR.ARFoundation
+    className: ARFaceManager
+  - hash:
+      serializedVersion: 2
+      Hash: 16dacd04869a876ea4bea0d1d2e77e34
+    assemblyName: Unity.XR.ARFoundation.dll
+    namespaceName: UnityEngine.XR.ARFoundation
+    className: ARPointCloudManager
+  - hash:
+      serializedVersion: 2
+      Hash: e1c35cdce946e9da77fe80a39c261608
+    assemblyName: Unity.XR.ARFoundation.dll
+    namespaceName: UnityEngine.XR.ARFoundation
+    className: ARSessionOrigin
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Unity.XR.ARFoundation.dll
+    namespaceName: UnityEngine.XR.ARFoundation
+    className: ARPointCloudMeshVisualizer
+  - hash:
+      serializedVersion: 2
+      Hash: 20d20168517d1c0e098918311aa95bbb
+    assemblyName: Unity.XR.ARFoundation.dll
+    namespaceName: UnityEngine.XR.ARFoundation
+    className: ARCameraBackground
+  - hash:
+      serializedVersion: 2
+      Hash: 4e9905b444d1582f62c8607337d04240
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ARpageTest
+  - hash:
+      serializedVersion: 2
+      Hash: f08ed50c5e0104cdd6dae832cfaac1bc
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: TestLocationService
+  - hash:
+      serializedVersion: 2
+      Hash: 453b2900d91d121255125ea784678537
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ARTapToPlaceObject
+  - hash:
+      serializedVersion: 2
+      Hash: 8a000e8d2fca49ca3707de9d19a3792d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: updateGPSText
   platform: 13
   scenePathNames:
-  - Assets/Scenes/Scott's brewery/p2 application.unity
-  playerPath: C:/Users/scott/OneDrive - Aalborg Universitet/Semester 2/Hunts/Prototype_High_Fidelity/Test_1.apk
+  - Assets/Scenes/Marc's Daycare/ARpageTesting.unity
+  playerPath: C:/Users/Switty's pc/Desktop/test.apk
