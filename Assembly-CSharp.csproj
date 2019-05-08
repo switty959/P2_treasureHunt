@@ -88,8 +88,26 @@
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>F:/unity_projekt/P2_treasureHunt/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.XR.FaceSubsystem">
+      <HintPath>F:/unity_projekt/P2_treasureHunt/Library/ScriptAssemblies/Unity.XR.FaceSubsystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Subsystem.Registration">
+      <HintPath>F:/unity_projekt/P2_treasureHunt/Library/ScriptAssemblies/Unity.Subsystem.Registration.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.XR.ARCore">
+      <HintPath>F:/unity_projekt/P2_treasureHunt/Library/ScriptAssemblies/Unity.XR.ARCore.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.XR.ARFoundation.Editor">
+      <HintPath>F:/unity_projekt/P2_treasureHunt/Library/ScriptAssemblies/Unity.XR.ARFoundation.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>F:/unity_projekt/P2_treasureHunt/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.XR.ARFoundation">
+      <HintPath>F:/unity_projekt/P2_treasureHunt/Library/ScriptAssemblies/Unity.XR.ARFoundation.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.XR.ARCore.Editor">
+      <HintPath>F:/unity_projekt/P2_treasureHunt/Library/ScriptAssemblies/Unity.XR.ARCore.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PackageManagerUI.Editor">
       <HintPath>F:/unity_projekt/P2_treasureHunt/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
@@ -99,24 +117,6 @@
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
       <HintPath>F:/unity_projekt/P2_treasureHunt/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.TextMeshPro">
-      <HintPath>F:/unity_projekt/P2_treasureHunt/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Analytics.DataPrivacy">
-      <HintPath>F:/unity_projekt/P2_treasureHunt/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.XR.FaceSubsystem">
-      <HintPath>F:/unity_projekt/P2_treasureHunt/Library/ScriptAssemblies/Unity.XR.FaceSubsystem.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Subsystem.Registration">
-      <HintPath>F:/unity_projekt/P2_treasureHunt/Library/ScriptAssemblies/Unity.Subsystem.Registration.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.XR.ARFoundation.Editor">
-      <HintPath>F:/unity_projekt/P2_treasureHunt/Library/ScriptAssemblies/Unity.XR.ARFoundation.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.XR.ARFoundation">
-      <HintPath>F:/unity_projekt/P2_treasureHunt/Library/ScriptAssemblies/Unity.XR.ARFoundation.dll</HintPath>
     </Reference>
     <Reference Include="Unity.XR.ARExtensions">
       <HintPath>F:/unity_projekt/P2_treasureHunt/Library/ScriptAssemblies/Unity.XR.ARExtensions.dll</HintPath>
@@ -130,11 +130,11 @@
     <Reference Include="Unity.XR.ARExtensions.Editor">
       <HintPath>F:/unity_projekt/P2_treasureHunt/Library/ScriptAssemblies/Unity.XR.ARExtensions.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.XR.ARCore">
-      <HintPath>F:/unity_projekt/P2_treasureHunt/Library/ScriptAssemblies/Unity.XR.ARCore.dll</HintPath>
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>F:/unity_projekt/P2_treasureHunt/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.XR.ARCore.Editor">
-      <HintPath>F:/unity_projekt/P2_treasureHunt/Library/ScriptAssemblies/Unity.XR.ARCore.Editor.dll</HintPath>
+    <Reference Include="Unity.Analytics.DataPrivacy">
+      <HintPath>F:/unity_projekt/P2_treasureHunt/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>F:/unityEditor/2019.1.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
