@@ -1439,6 +1439,11 @@ PrefabInstance:
       propertyPath: arpageShowRiddle
       value: 
       objectReference: {fileID: 1336153532}
+    - target: {fileID: 5779508613130823446, guid: 69b4f95ef998f6f48874331821617bd3,
+        type: 3}
+      propertyPath: howFar
+      value: 0.00025
+      objectReference: {fileID: 0}
     - target: {fileID: 5779508613130823447, guid: 69b4f95ef998f6f48874331821617bd3,
         type: 3}
       propertyPath: placementIndicator
@@ -4923,7 +4928,7 @@ MonoBehaviour:
   - biggus dickus
   - i go by many name, but you can call me tim
   - Lighting bolt!
-  numbersOfHunts: 1
+  numbersOfHunts: 5
 --- !u!1 &1122557101
 GameObject:
   m_ObjectHideFlags: 0
