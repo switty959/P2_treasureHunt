@@ -15,16 +15,7 @@ public class ARpageTest : MonoBehaviour
 
     private void Update()
     {
-        if (id < maxNumberOfClues)
-        {
-            backButtons[0].gameObject.SetActive(true);
-            backButtons[1].gameObject.SetActive(false);
-        }
-        else
-        {
-            backButtons[0].gameObject.SetActive(false);
-            backButtons[1].gameObject.SetActive(true);
-        }
+       
     }
 
     public void goToClue()
@@ -40,5 +31,18 @@ public class ARpageTest : MonoBehaviour
         backToClues.SetActive(false);
         currentPage.SetActive(false);
         endPage.SetActive(true);
+    }
+    public void checkIdmatch()
+    {
+        if (id < maxNumberOfClues)
+        {
+            backButtons[0].gameObject.SetActive(true);
+            backButtons[1].gameObject.SetActive(false);
+        }
+        else
+        {
+            backButtons[0].gameObject.SetActive(false);
+            backButtons[1].gameObject.SetActive(true);
+        }
     }
 }

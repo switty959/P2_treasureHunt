@@ -24,7 +24,7 @@ public class testClues : MonoBehaviour
     public string cluesNames ="clue";
    
     public int numbersOfClues = 5;
-    int margin = 50;
+    public int margin = 50;
     public int fk_hunt_id;
     public int cluesFoundSoFar = 0;
     public clues[] listOfClues;

@@ -14,7 +14,7 @@ public class testHunt : MonoBehaviour
     public string canvasName = "Canvas";
     public string[] huntNames = {"yes i did sir","have you seen my bear, tibbers","biggus dickus"," i go by many name, but you can call me tim","Lighting bolt!" };
     public int numbersOfHunts = 1;
-    int margin = 50;
+    public int margin = 50;
     
     public hunt[] hunters;
     

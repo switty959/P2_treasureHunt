@@ -9,10 +9,11 @@ public class ARTapToPlaceObject : MonoBehaviour
 {
     public GameObject placementIndicator;
     public GameObject objectsToSpawn;
-
+    public GameObject[] buttons;
     private ARSessionOrigin arOrigin;
     private Pose placemantPose;
     public bool placementPoseIsValid = false;
+    ARpageTest idchecker;
 
     // Start is called before the first frame update
     void Start()
@@ -35,6 +36,8 @@ public class ARTapToPlaceObject : MonoBehaviour
     public void PlaceObject()
     {
         Instantiate(objectsToSpawn, placemantPose.position, placemantPose.rotation);
+        idchecker.checkIdmatch();
+
     }
 
     private void UpdatePlacementIndicator()
@@ -68,4 +71,5 @@ public class ARTapToPlaceObject : MonoBehaviour
             placemantPose.rotation = Quaternion.LookRotation(cameraBearing);
         }
     }
+   
 }
