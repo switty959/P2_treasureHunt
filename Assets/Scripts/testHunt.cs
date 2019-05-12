@@ -17,14 +17,12 @@ public class testHunt : MonoBehaviour
     public int margin = 50;
     
     public hunt[] hunters;
+    public timer timer;
     
     // Start is called before the first frame update
     void Start()
     {
-
         canvasHolder = GameObject.Find(canvasName);
-        
-        
         hunters = new hunt[numbersOfHunts];
         generateHunts();
     }
@@ -53,5 +51,8 @@ public class testHunt : MonoBehaviour
         this.gameObject.SetActive(false);
         cluePage.SetActive(true);
         cluePage.GetComponent<testClues>().fk_hunt_id = id;
+        timer.enabled = true;
+
     }
+   
 }

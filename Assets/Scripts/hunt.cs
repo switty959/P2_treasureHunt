@@ -11,13 +11,14 @@ using UnityEngine.UI;
         int score;
         double time;
         float distance;
+        
 
         public hunt()
         {
             name = "Did someone order a knuckle sandwich?";
             id = 0;
             score = 0;
-            time = 0;
+            time = Time.time;
             distance = 0;
 
         }
@@ -26,13 +27,18 @@ using UnityEngine.UI;
             name = tempName;
             id = 0;
             score = 0;
-            time = 0;
+            time = Time.time;
             distance = 0;
         }
 
         public string getHuntName()
         {
         return this.name;
+        }
+
+        public double getHuntTime()
+        {
+        return this.time;
         }
 
         public void getHuntName(GameObject textHolder)

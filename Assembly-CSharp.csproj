@@ -78,6 +78,7 @@
     <Compile Include="Assets\Scripts\testClues.cs" />
     <Compile Include="Assets\Scripts\testHunt.cs" />
     <Compile Include="Assets\Scripts\TestLocationService.cs" />
+    <Compile Include="Assets\Scripts\timer.cs" />
     <Compile Include="Assets\Scripts\updateGPSText.cs" />
     <None Include="Assets\Materials\GrabPass.shader" />
     <None Include="Assets\Ciconia Studio\Shaders\Double Sided Shaders\Double Sided Emissive Diffuse.shader" />

@@ -12,11 +12,10 @@ public class ARpageTest : MonoBehaviour
     public Button[] backButtons;
     public int id;
     public int maxNumberOfClues;
+    public timer timer;
+    public Text[] textOnEndPage;//0 is for score, 1 is for distance and 2 is for time 
 
-    private void Update()
-    {
-       
-    }
+    
 
     public void goToClue()
     {
@@ -31,6 +30,9 @@ public class ARpageTest : MonoBehaviour
         backToClues.SetActive(false);
         currentPage.SetActive(false);
         endPage.SetActive(true);
+        
+        textOnEndPage[2].text = timer.GetComponent<timer>().minutes+" : "+timer.GetComponent<timer>().seconds;
+        timer.enabled = false;
     }
     public void checkIdmatch()
     {
