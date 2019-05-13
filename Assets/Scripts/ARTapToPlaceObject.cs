@@ -9,11 +9,12 @@ public class ARTapToPlaceObject : MonoBehaviour
 {
     public GameObject placementIndicator;
     public GameObject objectsToSpawn;
-    public GameObject[] buttons;
+    
     private ARSessionOrigin arOrigin;
     private Pose placemantPose;
     public bool placementPoseIsValid = false;
     ARpageTest idchecker;
+    public int counter = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -27,7 +28,7 @@ public class ARTapToPlaceObject : MonoBehaviour
         UpdatePlacementPose();
         UpdatePlacementIndicator();
 
-        if (placementPoseIsValid && Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began)
+        if (placementPoseIsValid && Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began && counter < 1)
         {
             PlaceObject();
         }
@@ -37,6 +38,7 @@ public class ARTapToPlaceObject : MonoBehaviour
     {
         Instantiate(objectsToSpawn, placemantPose.position, placemantPose.rotation);
         idchecker.checkIdmatch();
+        counter++;
 
     }
 

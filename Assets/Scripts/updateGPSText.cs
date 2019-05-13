@@ -24,6 +24,7 @@ public class updateGPSText : MonoBehaviour
         if (Vector2.Distance(newPos, target) <= howFar)
         {
             arpageShowRiddle.SetActive(false);
+            Handheld.Vibrate();
         }
         else
         {

@@ -59,7 +59,7 @@ public class testClues : MonoBehaviour
             listOfClues[i].setClueRiddle(cluesRiddle[i]);
             listOfClues[i].setObjectToShow(rewards[i]);
             listOfClues[i].setClueCoordinates(cluesCoordinates[i]);
-
+            
         }
         for (int i = 0; i < numbersOfClues; i++)
         {
@@ -88,6 +88,7 @@ public class testClues : MonoBehaviour
         listOfClues[id].setClueFound(false);
         listOfClues[id].setClueFounded(true);
         cluesFoundSoFar++;
+        setObject.counter = 0;
     }
 
     public void headToARPage(int id)
