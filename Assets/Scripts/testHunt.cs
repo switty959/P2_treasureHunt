@@ -12,7 +12,7 @@ public class testHunt : MonoBehaviour
 
 
     public string canvasName = "Canvas";
-    public string[] huntNames = {"yes i did sir","have you seen my bear, tibbers","biggus dickus"," i go by many name, but you can call me tim","Lighting bolt!" };
+    public string[] huntNames = {"Harbour Hunt","Stoneage Rampage, Dickhead Dinosaurs","Prostitutes of the Pyramids"," Indianna Jones and the Temple of Sydhavn","Harbour Hunt" };
     public int numbersOfHunts = 1;
     public int margin = 50;
     

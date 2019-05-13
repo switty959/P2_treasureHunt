@@ -26,7 +26,7 @@ public class clueAnimation : MonoBehaviour
     {
 
 
-        if (Input.GetKeyDown("1"))
+        if (Input.GetKeyDown("1") || Input.touchCount == 1)
         {          
           
             modelAnim.Play(Opening.name.ToString());
