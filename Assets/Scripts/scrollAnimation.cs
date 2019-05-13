@@ -28,7 +28,7 @@ public class scrollAnimation : MonoBehaviour
     {
 
 
-        if (Input.GetKeyDown("1"))
+        if (Input.GetKeyDown("1") || Input.touchCount == 1)
         {
 
             scrollAnim.Play(ScrollOpening.name.ToString());
