@@ -10,10 +10,9 @@ public class clues
     string riddles;
     int id;
     int fk_huntId;
-    /*double latX;
-    double longY;*/
     Vector2 coordinates;
     bool clueFound;
+    bool clueFounded;
     GameObject objectToShow;
 
     public clues()
@@ -22,10 +21,9 @@ public class clues
         riddles = "this is a riddle";
         id = 0;
         fk_huntId = 0;
-        /* latX = 0.0;
-         longY = 0.0;*/
         coordinates = new Vector2(0,0);
         clueFound = false;
+        clueFounded = false;
     }
     public clues (string tempName, string tempRiddle, int tempId, int tempHuntId, float tempLatX, float tempLongY,GameObject tempObject)
     {
@@ -33,10 +31,9 @@ public class clues
         riddles = tempRiddle;
         id = tempId;
         fk_huntId = tempHuntId;
-        /*latX = tempLatX;
-        longY = tempLongY;*/
         coordinates = new Vector2(tempLatX, tempLongY);
         clueFound = false;
+        clueFounded = false;
         objectToShow = tempObject;
     }
     //standard get method start
@@ -61,15 +58,7 @@ public class clues
     {
         return this.coordinates;
     }
-    /*
-    public double getClueLatX()
-    {
-        return this.latX;
-    }
-    public double getClueLongY()
-    {
-        return this.longY;
-    }*/
+
     public bool getClueFound()
     {
         return this.clueFound;
@@ -106,15 +95,6 @@ public class clues
         this.coordinates = newCoordinates;
     }
 
-    /*
-    public void setClueLatX(double newLatX)
-    {
-        this.latX = newLatX;
-    }
-    public void setClueLongY(double newLongY)
-    {
-        this.longY = newLongY;
-    }*/
 
     public void setClueFound(bool newBool)
     {

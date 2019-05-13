@@ -18,7 +18,7 @@ public class testClues : MonoBehaviour
     Transform imageHolder;
     public ARTapToPlaceObject setObject;
     public updateGPSText setTargetcoordinates;
-    
+    public Sprite[] buttonImage; // 0 is locked, 1 is checked
 
     public string currentPageName = "Canvas";
     public string cluesNames ="clue";
@@ -82,9 +82,9 @@ public class testClues : MonoBehaviour
             }
         }
     }
-    public void test(int id)
+    public void boolChange(int id)
     {
-        listOfClues[id + 1].setClueFound(true);
+        listOfClues[id+1].setClueFound(true);
     }
 
     public void headToARPage(int id)
@@ -115,7 +115,6 @@ public class testClues : MonoBehaviour
             {
                 buttons[i].transform.GetChild(1).gameObject.SetActive(true);
             }
-           
         }
     }
 }

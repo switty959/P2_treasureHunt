@@ -19,7 +19,7 @@ public class ARpageTest : MonoBehaviour
 
     public void goToClue()
     {
-            testclues.test(id);
+            testclues.boolChange(id);
             backToClues.SetActive(true);
             currentPage.SetActive(false);
             endPage.SetActive(false);
