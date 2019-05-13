@@ -4501,7 +4501,7 @@ MonoBehaviour:
   huntNames:
   - Harbour Hunt
   numbersOfHunts: 1
-  margin: 250
+  margin: 350
   timer: {fileID: 1088692192}
 --- !u!1 &1122557101
 GameObject:
@@ -5708,19 +5708,19 @@ MonoBehaviour:
   - {x: 55.64936, y: 12.54305}
   - {x: 55.64897, y: 12.54317}
   cluesRiddle:
-  - from A to B, I cross the water everyday, stand beneath me next to A
-  - not far from you smokers smoke, near some benches they take a toke, it is here
+  - From A to B, I cross the water everyday, stand beneath me next to A
+  - Not far from you smokers smoke, near some benches they take a toke, it is here
     you must look, to find the next clue hidden within a book
-  - walk towards B across the harbour, once you've crossed the water, look near the
+  - Walk towards B across the harbour, once you've crossed the water, look near the
     corner
   - I come in handy when saving lives, I am striped with the colours of the Danish
     flag, Likely the one who has me survives, here is a clue in a painting by Karl
     Schrag
-  - great heights we grow to surpass, with the sun and water we will not diminish,
-    beneath the scond of us lay a spyglass, find it, it will lead you to your finish
-  - just a little further around the corner, you will find a small garden away from
-    water, in the center of this garden, your prize awaits, find it and show it to
-    your classmates
+  - Great heights we grow to surpass, with the sun and water we will not diminish,
+    beneath the second of us lay a spyglass, find it, it will lead you to your finish
+  - Just a little further around the corner, you will find a small garden away from
+    the water, in the center of this garden, your prize awaits, find it and show it
+    to your classmates
   setObject: {fileID: 363586017}
   setTargetcoordinates: {fileID: 363586018}
   buttonImage:
@@ -5729,7 +5729,7 @@ MonoBehaviour:
   currentPageName: Content
   cluesNames: clue
   numbersOfClues: 6
-  margin: 250
+  margin: 350
   fk_hunt_id: 0
   cluesFoundSoFar: 0
 --- !u!1 &1490340655
