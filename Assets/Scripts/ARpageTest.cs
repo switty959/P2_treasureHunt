@@ -13,6 +13,7 @@ public class ARpageTest : MonoBehaviour
     public int id;
     public int maxNumberOfClues;
     public timer timer;
+    public testClues cluefound;
     public Text[] textOnEndPage;//0 is for score, 1 is for distance and 2 is for time 
 
     
@@ -36,11 +37,12 @@ public class ARpageTest : MonoBehaviour
     }
     public void checkIdmatch()
     {
-        if (id < maxNumberOfClues)
+        if (id < maxNumberOfClues || cluefound.cluesFoundSoFar <maxNumberOfClues)
         {
             backButtons[0].gameObject.SetActive(true);
             backButtons[1].gameObject.SetActive(false);
         }
+
         else
         {
             backButtons[0].gameObject.SetActive(false);

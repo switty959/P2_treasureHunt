@@ -63,6 +63,12 @@ public class clues
     {
         return this.clueFound;
     }
+
+    public bool getClueFounded()
+    {
+        return this.clueFounded;
+    }
+
     public GameObject getObjectToShow()
     {
         return this.objectToShow;
@@ -94,12 +100,16 @@ public class clues
     {
         this.coordinates = newCoordinates;
     }
-
-
     public void setClueFound(bool newBool)
     {
         this.clueFound = newBool;
     }
+
+    public void setClueFounded(bool newBool)
+    {
+        this.clueFounded = newBool;
+    }
+
     public void setObjectToShow(GameObject newObject)
     {
         this.objectToShow = newObject;

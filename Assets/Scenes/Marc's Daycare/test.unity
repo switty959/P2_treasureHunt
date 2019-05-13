@@ -5729,7 +5729,7 @@ MonoBehaviour:
   currentPageName: Content
   cluesNames: clue
   numbersOfClues: 6
-  margin: 350
+  margin: 250
   fk_hunt_id: 0
   cluesFoundSoFar: 0
 --- !u!1 &1490340655
@@ -5834,6 +5834,7 @@ MonoBehaviour:
   id: 0
   maxNumberOfClues: 0
   timer: {fileID: 1088692192}
+  cluefound: {fileID: 1482393318}
   textOnEndPage:
   - {fileID: 2138408268}
   - {fileID: 1325805504}

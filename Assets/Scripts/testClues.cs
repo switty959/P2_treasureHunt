@@ -85,6 +85,9 @@ public class testClues : MonoBehaviour
     public void boolChange(int id)
     {
         listOfClues[id+1].setClueFound(true);
+        listOfClues[id].setClueFound(false);
+        listOfClues[id].setClueFounded(true);
+        cluesFoundSoFar++;
     }
 
     public void headToARPage(int id)
@@ -101,7 +104,11 @@ public class testClues : MonoBehaviour
 
     public void checkClueBool()
     {
-        listOfClues[0].setClueFound(true);
+        if (cluesFoundSoFar == 0)
+        {
+            listOfClues[0].setClueFound(true);
+        }
+
         for (int i = 0; i < numbersOfClues; i++)
         {
             //buttons[i].SetActive(false);
@@ -114,6 +121,14 @@ public class testClues : MonoBehaviour
             else
             {
                 buttons[i].transform.GetChild(1).gameObject.SetActive(true);
+            }
+            if (listOfClues[i].getClueFounded())
+            {
+                buttons[i].transform.GetChild(1).transform.GetChild(0).GetComponent<Image>().sprite = buttonImage[1];
+            }
+            else
+            {
+                buttons[i].transform.GetChild(1).transform.GetChild(0).GetComponent<Image>().sprite = buttonImage[0];
             }
         }
     }
