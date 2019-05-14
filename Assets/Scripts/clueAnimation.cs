@@ -11,6 +11,7 @@ public class clueAnimation : MonoBehaviour
     public AnimationClip Closed;
     public AnimationClip Opening;
     public AnimationClip Open;
+    private bool Played;
    
     Animator modelAnim;
 
@@ -26,11 +27,11 @@ public class clueAnimation : MonoBehaviour
     {
 
 
-        if (Input.GetKeyDown("1") || Input.touchCount == 1)
+        if (Input.GetKeyDown("1") && Played == false || Input.touchCount == 1 && Played == false)
         {          
           
             modelAnim.Play(Opening.name.ToString());
-            
+            Played = true;
         }
 
     }

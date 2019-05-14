@@ -9,6 +9,7 @@ ScriptsOnlyBuild:
     - PanelControls
     - TestLocationService
     - clueAnimation
+    - confetti
     - hideThisObject
     - profileTest
     - scrollAnimation
@@ -21,8 +22,12 @@ ScriptsOnlyBuild:
     - UnityEngine.XR.ARFoundation.ARPlaneManager
     - UnityEngine.XR.ARFoundation.ARSession
     - UnityEngine.XR.ARFoundation.ARSessionOrigin
-    UnityEditor.TestRunner.dll:
-    - UnityEditor.TestTools.TestRunner.TestListCacheData
+    UnityEditor.Graphs.dll:
+    - UnityEditor.Graphs.AnimationBlendTree.Graph
+    - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.Graph
+    - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimatorControllerTool
     UnityEngine.SpatialTracking.dll:
     - UnityEngine.SpatialTracking.TrackedPoseDriver
     UnityEngine.UI.dll:
@@ -85,61 +90,63 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 9336}
     - Class: 114
+      Script: {instanceID: 9450}
+    - Class: 114
       Script: {instanceID: 9452}
     - Class: 114
-      Script: {instanceID: 9454}
+      Script: {instanceID: 9458}
     - Class: 114
-      Script: {instanceID: 9460}
+      Script: {instanceID: 9464}
     - Class: 114
-      Script: {instanceID: 9466}
+      Script: {instanceID: 9472}
     - Class: 114
-      Script: {instanceID: 9474}
+      Script: {instanceID: 9480}
     - Class: 114
-      Script: {instanceID: 9482}
+      Script: {instanceID: 9498}
     - Class: 114
       Script: {instanceID: 9500}
     - Class: 114
-      Script: {instanceID: 9502}
+      Script: {instanceID: 9508}
     - Class: 114
       Script: {instanceID: 9510}
     - Class: 114
-      Script: {instanceID: 9512}
+      Script: {instanceID: 9548}
     - Class: 114
-      Script: {instanceID: 9552}
+      Script: {instanceID: 9728}
     - Class: 114
-      Script: {instanceID: 9732}
+      Script: {instanceID: 9762}
     - Class: 114
-      Script: {instanceID: 9766}
+      Script: {instanceID: 9848}
     - Class: 114
-      Script: {instanceID: 9852}
+      Script: {instanceID: 10312}
     - Class: 114
-      Script: {instanceID: 10318}
+      Script: {instanceID: 10376}
     - Class: 114
-      Script: {instanceID: 10382}
+      Script: {instanceID: 10416}
     - Class: 114
-      Script: {instanceID: 10422}
+      Script: {instanceID: 10480}
     - Class: 114
-      Script: {instanceID: 10486}
+      Script: {instanceID: 10516}
     - Class: 114
-      Script: {instanceID: 10522}
+      Script: {instanceID: 10672}
     - Class: 114
-      Script: {instanceID: 10678}
+      Script: {instanceID: 10676}
     - Class: 114
-      Script: {instanceID: 10742}
+      Script: {instanceID: 10738}
     - Class: 114
-      Script: {instanceID: 10820}
+      Script: {instanceID: 10816}
     - Class: 114
-      Script: {instanceID: 10924}
+      Script: {instanceID: 10918}
     - Class: 114
-      Script: {instanceID: 11050}
+      Script: {instanceID: 11044}
+    - Class: 114
+      Script: {instanceID: 11052}
     - Class: 114
       Script: {instanceID: 11058}
     - Class: 114
-      Script: {instanceID: 11064}
+      Script: {instanceID: 11186}
     - Class: 114
-      Script: {instanceID: 11192}
-    - Class: 114
-      Script: {instanceID: 148868}
+      Script: {instanceID: 11214}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -147,6 +154,10 @@ ScriptsOnlyBuild:
     - Class: 137
       Script: {instanceID: 0}
     - Class: 157
+      Script: {instanceID: 0}
+    - Class: 198
+      Script: {instanceID: 0}
+    - Class: 199
       Script: {instanceID: 0}
     - Class: 213
       Script: {instanceID: 0}
@@ -409,6 +420,18 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: TestLocationService
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: UnityEngine.Advertisements.dll
+    namespaceName: UnityEngine.Advertisements
+    className: CallbackExecutor
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: UnityEngine.Advertisements.dll
+    namespaceName: UnityEngine.Advertisements.Editor
+    className: Placeholder
   - hash:
       serializedVersion: 2
       Hash: cf9f5cf2c3145a37ac07f00e50e460f9
@@ -1275,6 +1298,12 @@ ScriptsOnlyBuild:
     className: clueAnimation
   - hash:
       serializedVersion: 2
+      Hash: b928a993d1756862738283216496303b
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: hideThisObject
+  - hash:
+      serializedVersion: 2
       Hash: d0976f085ee327327a35839ca3cb80f1
     assemblyName: Unity.XR.ARFoundation.dll
     namespaceName: UnityEngine.XR.ARFoundation
@@ -1593,6 +1622,12 @@ ScriptsOnlyBuild:
     className: SignalEmitter
   - hash:
       serializedVersion: 2
+      Hash: 8ddb72b870326dd3118ef114100e37b4
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: confetti
+  - hash:
+      serializedVersion: 2
       Hash: 0077fc8e4fbae67f80e80ebd534de5a0
     assemblyName: Vuforia.UnityExtensions.dll
     namespaceName: Vuforia
@@ -1801,13 +1836,7 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
-  - hash:
-      serializedVersion: 2
-      Hash: b928a993d1756862738283216496303b
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: hideThisObject
   platform: 13
   scenePathNames:
   - Assets/Scenes/Marc's Daycare/test.unity
-  playerPath: C:/Users/Bruger/Desktop/first final test.apk
+  playerPath: C:/Users/scott/OneDrive - Aalborg Universitet/Semester 2/HarbourTest1.apk

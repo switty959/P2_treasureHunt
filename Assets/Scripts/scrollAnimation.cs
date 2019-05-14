@@ -12,6 +12,7 @@ public class scrollAnimation : MonoBehaviour
     public AnimationClip ScrollClosed;
     public AnimationClip ScrollOpening;
     public AnimationClip ScrollOpen;
+    private bool Played;
 
     Animation scrollAnim;
     
@@ -28,10 +29,11 @@ public class scrollAnimation : MonoBehaviour
     {
 
 
-        if (Input.GetKeyDown("1") || Input.touchCount == 1)
+        if (Input.GetKeyDown("1") && Played == false || Input.touchCount == 1 && Played == false)
         {
 
             scrollAnim.Play(ScrollOpening.name.ToString());
+            Played = true;
 
         }
 
