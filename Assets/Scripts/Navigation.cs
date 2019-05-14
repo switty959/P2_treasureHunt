@@ -58,6 +58,7 @@ public class Navigation : MonoBehaviour
             Panels[7].SetActive(false);
         } // if on ar cam page, back button sets clue page to active and deactivates the rest
 
+       
         else if (Panels[6].activeInHierarchy)
         {
             Panels[5].SetActive(true);

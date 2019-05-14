@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4241637079363719704}
   - component: {fileID: 4241637079363719709}
   m_Layer: 5
-  m_Name: placeholder_for_hunts
+  m_Name: placeholder_for_hunt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -52,11 +52,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4241637079363719704}
     m_Modifications:
-    - target: {fileID: 634551093172734139, guid: 712aa1e46c5de7c488e5b1595ff27904,
-        type: 3}
-      propertyPath: m_Name
-      value: Hunt_1_Button
-      objectReference: {fileID: 0}
     - target: {fileID: 634551093172734138, guid: 712aa1e46c5de7c488e5b1595ff27904,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -162,7 +157,13 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 634551093172734139, guid: 712aa1e46c5de7c488e5b1595ff27904,
+        type: 3}
+      propertyPath: m_Name
+      value: Hunt_1_Button
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 634551091343118286, guid: 712aa1e46c5de7c488e5b1595ff27904, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 712aa1e46c5de7c488e5b1595ff27904, type: 3}
 --- !u!224 &4632412840832951706 stripped
 RectTransform:

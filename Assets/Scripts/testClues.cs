@@ -42,6 +42,8 @@ public class testClues : MonoBehaviour
     private void Update()
     {
         checkClueBool();
+        setTargetcoordinates.counter = false;
+        setObject.isObjectPlaced = false;
     }
 
 
@@ -88,7 +90,7 @@ public class testClues : MonoBehaviour
         listOfClues[id].setClueFound(false);
         listOfClues[id].setClueFounded(true);
         cluesFoundSoFar++;
-        setObject.counter = 0;
+        
     }
 
     public void headToARPage(int id)

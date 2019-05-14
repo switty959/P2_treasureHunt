@@ -14,7 +14,9 @@ public class ARTapToPlaceObject : MonoBehaviour
     private Pose placemantPose;
     public bool placementPoseIsValid = false;
     ARpageTest idchecker;
-    public int counter = 0;
+    public updateGPSText counterCheck;
+    public bool isObjectPlaced = false;
+    
 
     // Start is called before the first frame update
     void Start()
@@ -27,18 +29,21 @@ public class ARTapToPlaceObject : MonoBehaviour
     {
         UpdatePlacementPose();
         UpdatePlacementIndicator();
+        Vector2 newPos = new Vector2(TestLocationService.Instance.latitude, TestLocationService.Instance.longtitude);
 
-        if (placementPoseIsValid && Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began && counter < 1)
+        if (placementPoseIsValid && Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began && !isObjectPlaced && Vector2.Distance(newPos, counterCheck.target) <= counterCheck.howFar)
         {
             PlaceObject();
+            
+
         }
     }
 
     public void PlaceObject()
     {
         Instantiate(objectsToSpawn, placemantPose.position, placemantPose.rotation);
-        idchecker.checkIdmatch();
-        counter++;
+        counterCheck.counter = true;
+        isObjectPlaced = true;
 
     }
 

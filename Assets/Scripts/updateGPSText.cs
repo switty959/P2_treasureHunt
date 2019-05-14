@@ -9,6 +9,8 @@ public class updateGPSText : MonoBehaviour
     public float howFar;
     public int checkpoint;
     public GameObject arpageShowRiddle;
+    public bool counter = false;
+
 
     private void Start()
     {
@@ -24,12 +26,13 @@ public class updateGPSText : MonoBehaviour
         if (Vector2.Distance(newPos, target) <= howFar)
         {
             arpageShowRiddle.SetActive(false);
-            Handheld.Vibrate();
+
         }
         else
         {
             arpageShowRiddle.SetActive(true);
         }
+       
         
     }
     
