@@ -10,7 +10,6 @@ public class ARpageTest : MonoBehaviour
     public GameObject endPage;
 
     public testClues testclues;
-    public Button[] backButtons;
     public int id;
     public int maxNumberOfClues;
     public timer timer;
@@ -18,13 +17,8 @@ public class ARpageTest : MonoBehaviour
     public updateGPSText boolCheck;
     public ARTapToPlaceObject objectCheck;
     public Text[] textOnEndPage;//0 is for score, 1 is for distance and 2 is for time 
-    public Text boolChecker;
     public GameObject naviBar;
 
-    private void Update()
-    {
-        boolChecker.text = "object placed : " + objectCheck.isObjectPlaced;
-    }
 
     public void goToClue()
     {
@@ -34,22 +28,37 @@ public class ARpageTest : MonoBehaviour
             currentPage.SetActive(false);
             endPage.SetActive(true);
             objectCheck.isObjectPlaced = false;
+            int minutes = int.Parse(timer.minutes);
+            int sec = int.Parse(timer.seconds);
+            float distance = 547;
+
+            float score = minutes*0.5f+sec+0.3f+distance*0.4f;
+            
+            textOnEndPage[0].text = score.ToString();
+            textOnEndPage[1].text = distance.ToString()+" m";
             textOnEndPage[2].text = timer.GetComponent<timer>().minutes + " : " + timer.GetComponent<timer>().seconds;
             timer.enabled = false;
             boolCheck.counter = false;
             naviBar.SetActive(true);
+            
         }
 
         if (id< cluefound.numbersOfClues && boolCheck.counter)
         {
+            cluefound.showHint.gameObject.SetActive(false);
             testclues.boolChange(id);
             backToClues.SetActive(true);
             currentPage.SetActive(false);
             endPage.SetActive(false);
             objectCheck.isObjectPlaced = false;
 
-        }    
+        }
+        
+    }
+    public void showHint()
+    {
+        cluefound.showHint.gameObject.SetActive(true);
     }
 
-   
+
 }

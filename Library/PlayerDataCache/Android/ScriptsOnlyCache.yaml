@@ -28,6 +28,8 @@ ScriptsOnlyBuild:
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
     - UnityEditor.Graphs.AnimatorControllerTool
+    UnityEditor.TestRunner.dll:
+    - UnityEditor.TestTools.TestRunner.TestListCacheData
     UnityEngine.SpatialTracking.dll:
     - UnityEngine.SpatialTracking.TrackedPoseDriver
     UnityEngine.UI.dll:
@@ -86,67 +88,67 @@ ScriptsOnlyBuild:
     - Class: 111
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 9324}
+      Script: {instanceID: 9516}
     - Class: 114
-      Script: {instanceID: 9336}
+      Script: {instanceID: 9528}
     - Class: 114
-      Script: {instanceID: 9450}
+      Script: {instanceID: 9642}
     - Class: 114
-      Script: {instanceID: 9452}
+      Script: {instanceID: 9644}
     - Class: 114
-      Script: {instanceID: 9458}
+      Script: {instanceID: 9650}
     - Class: 114
-      Script: {instanceID: 9464}
+      Script: {instanceID: 9656}
     - Class: 114
-      Script: {instanceID: 9472}
+      Script: {instanceID: 9664}
     - Class: 114
-      Script: {instanceID: 9480}
+      Script: {instanceID: 9672}
     - Class: 114
-      Script: {instanceID: 9498}
+      Script: {instanceID: 9690}
     - Class: 114
-      Script: {instanceID: 9500}
+      Script: {instanceID: 9692}
     - Class: 114
-      Script: {instanceID: 9508}
+      Script: {instanceID: 9700}
     - Class: 114
-      Script: {instanceID: 9510}
+      Script: {instanceID: 9702}
     - Class: 114
-      Script: {instanceID: 9548}
+      Script: {instanceID: 9740}
     - Class: 114
-      Script: {instanceID: 9728}
+      Script: {instanceID: 9920}
     - Class: 114
-      Script: {instanceID: 9762}
+      Script: {instanceID: 9954}
     - Class: 114
-      Script: {instanceID: 9848}
+      Script: {instanceID: 10040}
     - Class: 114
-      Script: {instanceID: 10312}
+      Script: {instanceID: 10504}
     - Class: 114
-      Script: {instanceID: 10376}
+      Script: {instanceID: 10568}
     - Class: 114
-      Script: {instanceID: 10416}
-    - Class: 114
-      Script: {instanceID: 10480}
-    - Class: 114
-      Script: {instanceID: 10516}
+      Script: {instanceID: 10608}
     - Class: 114
       Script: {instanceID: 10672}
     - Class: 114
-      Script: {instanceID: 10676}
+      Script: {instanceID: 10708}
     - Class: 114
-      Script: {instanceID: 10738}
+      Script: {instanceID: 10864}
     - Class: 114
-      Script: {instanceID: 10816}
+      Script: {instanceID: 10868}
     - Class: 114
-      Script: {instanceID: 10918}
+      Script: {instanceID: 10930}
     - Class: 114
-      Script: {instanceID: 11044}
+      Script: {instanceID: 11008}
     - Class: 114
-      Script: {instanceID: 11052}
+      Script: {instanceID: 11110}
     - Class: 114
-      Script: {instanceID: 11058}
+      Script: {instanceID: 11236}
     - Class: 114
-      Script: {instanceID: 11186}
+      Script: {instanceID: 11244}
     - Class: 114
-      Script: {instanceID: 11214}
+      Script: {instanceID: 11250}
+    - Class: 114
+      Script: {instanceID: 11378}
+    - Class: 114
+      Script: {instanceID: 12456}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -420,18 +422,6 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: TestLocationService
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: UnityEngine.Advertisements.dll
-    namespaceName: UnityEngine.Advertisements
-    className: CallbackExecutor
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: UnityEngine.Advertisements.dll
-    namespaceName: UnityEngine.Advertisements.Editor
-    className: Placeholder
   - hash:
       serializedVersion: 2
       Hash: cf9f5cf2c3145a37ac07f00e50e460f9
@@ -1190,7 +1180,7 @@ ScriptsOnlyBuild:
     className: updateGPSText
   - hash:
       serializedVersion: 2
-      Hash: 81bd318aca9e4e930baa925ffb617650
+      Hash: 9f8822bead0b78a8a81e1a7fbb6344de
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: ARpageTest
@@ -1382,7 +1372,7 @@ ScriptsOnlyBuild:
     className: TMP_ColorGradient
   - hash:
       serializedVersion: 2
-      Hash: 7607f3e73fa7833e9ced126e29f55c8c
+      Hash: ff083dc66705043bcbbf61e8ccb40ca8
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: testClues
@@ -1622,12 +1612,6 @@ ScriptsOnlyBuild:
     className: SignalEmitter
   - hash:
       serializedVersion: 2
-      Hash: 8ddb72b870326dd3118ef114100e37b4
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: confetti
-  - hash:
-      serializedVersion: 2
       Hash: 0077fc8e4fbae67f80e80ebd534de5a0
     assemblyName: Vuforia.UnityExtensions.dll
     namespaceName: Vuforia
@@ -1836,7 +1820,13 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
+  - hash:
+      serializedVersion: 2
+      Hash: 8ddb72b870326dd3118ef114100e37b4
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: confetti
   platform: 13
   scenePathNames:
   - Assets/Scenes/Marc's Daycare/test.unity
-  playerPath: C:/Users/scott/OneDrive - Aalborg Universitet/Semester 2/HarbourTest1.apk
+  playerPath: C:/Users/Bruger/Desktop/first final test.apk

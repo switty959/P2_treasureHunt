@@ -16,7 +16,7 @@ public class profileTest : MonoBehaviour
 
         profileName.GetComponent<Text>().text = profile.getName();
         profileScore.GetComponent<Text>().text = profile.getScore().ToString();
-        profileDistance.GetComponent<Text>().text = profile.getDistance().ToString() + " km";
+        profileDistance.GetComponent<Text>().text = profile.getDistance().ToString() + " m";
         profileTotalTime.GetComponent<Text>().text = profile.getTotalTime().ToString();
         profileHuntsCompleted.GetComponent<Text>().text = profile.getCompletedHunts().ToString();
 

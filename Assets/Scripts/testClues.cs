@@ -10,11 +10,15 @@ public class testClues : MonoBehaviour
     public GameObject nameholders;
     public GameObject ARPage;
     public GameObject arpageRiddle;
+    public clues[] listOfClues;
+    public Text clueOutOfTotalclues;
+    public Text showHint;
 
     public GameObject[] buttons;
     public GameObject[] rewards; // place 3D models in here
     public Vector2[] cluesCoordinates;
     public string[] cluesRiddle = { "who shot the sherrif?", "Who carry a teddy bear in online game called 'League of Legeonds'?", "Which movie is this reference from", "in the 'monty python and the holy grail', what is Tim's job?", "this spell is what?" };
+    public string[] clueHints;
     Transform imageHolder;
     public ARTapToPlaceObject setObject;
     public updateGPSText setTargetcoordinates;
@@ -22,12 +26,13 @@ public class testClues : MonoBehaviour
 
     public string currentPageName = "Canvas";
     public string cluesNames ="clue";
+    
    
     public int numbersOfClues = 5;
     public int margin = 50;
     public int fk_hunt_id;
     public int cluesFoundSoFar = 0;
-    public clues[] listOfClues;
+
 
     // Start is called before the first frame update
     void Start()
@@ -35,6 +40,7 @@ public class testClues : MonoBehaviour
         currentPage = GameObject.Find(currentPageName);
         listOfClues = new clues[numbersOfClues];
         buttons = new GameObject[numbersOfClues];
+       
 
         generateClues();
         
@@ -61,6 +67,7 @@ public class testClues : MonoBehaviour
             listOfClues[i].setClueRiddle(cluesRiddle[i]);
             listOfClues[i].setObjectToShow(rewards[i]);
             listOfClues[i].setClueCoordinates(cluesCoordinates[i]);
+            listOfClues[i].setClueHint(clueHints[i]);
             
         }
         for (int i = 0; i < numbersOfClues; i++)
@@ -103,6 +110,9 @@ public class testClues : MonoBehaviour
         this.gameObject.SetActive(false);
         setTargetcoordinates.GetComponent<updateGPSText>().target = listOfClues[id].getClueCoordinates();
         arpageRiddle.GetComponent<Text>().text = listOfClues[id].getClueRiddle();
+        int currentNumberOfClue = id + 1;
+        clueOutOfTotalclues.text = currentNumberOfClue + "/" + numbersOfClues;
+        showHint.text = listOfClues[id].getClueHint();
     }
 
     public void checkClueBool()

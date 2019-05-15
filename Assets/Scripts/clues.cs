@@ -8,6 +8,7 @@ public class clues
 {
     string name;
     string riddles;
+    string hint;
     int id;
     int fk_huntId;
     Vector2 coordinates;
@@ -19,16 +20,18 @@ public class clues
     {
         name = "first clue";
         riddles = "this is a riddle";
+        hint = "this is a hint";
         id = 0;
         fk_huntId = 0;
         coordinates = new Vector2(0,0);
         clueFound = false;
         clueFounded = false;
     }
-    public clues (string tempName, string tempRiddle, int tempId, int tempHuntId, float tempLatX, float tempLongY,GameObject tempObject)
+    public clues (string tempName, string tempRiddle,string tempHint, int tempId, int tempHuntId, float tempLatX, float tempLongY,GameObject tempObject)
     {
         name = tempName;
         riddles = tempRiddle;
+        hint = tempHint;
         id = tempId;
         fk_huntId = tempHuntId;
         coordinates = new Vector2(tempLatX, tempLongY);
@@ -45,6 +48,11 @@ public class clues
     {
         return this.riddles;
     }
+    public string getClueHint()
+    {
+        return this.hint;
+    }
+
     public int getClueId()
     {
         return this.id;
@@ -83,6 +91,10 @@ public class clues
     public void setClueRiddle(string newRiddle)
     {
         this.riddles = newRiddle;
+    }
+    public void setClueHint(string newHint)
+    {
+        this.hint= newHint;
     }
     public void setClueId(int newId)
     {
